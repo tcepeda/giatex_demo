@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide')
 
 #TODO change to relative path
-file_path = "GIATEX_dataset_merged_demo.csv"
+file_path = "./GIATEX_dataset_merged_demo.csv"
 
 # Try reading with different encodings
 encodings_to_try = ['utf-8', 'latin-1', 'ISO-8859-1']
