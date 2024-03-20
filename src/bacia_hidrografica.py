@@ -7,7 +7,7 @@ from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide')
 
 #TODO change to relative path
-file_path = "../data/GIATEX_dataset_merged_demo.csv"
+file_path = "./GIATEX_dataset_merged_demo.csv"
 
 # Try reading with different encodings
 encodings_to_try = ['utf-8', 'latin-1', 'ISO-8859-1']
@@ -74,8 +74,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Display the images in the sidebar
-st.sidebar.image("../data/logo_oficial.png", use_column_width=True)
-st.sidebar.image("../data/BARRA_2024.png", use_column_width=True)
+st.sidebar.image("./logo_oficial.png", use_column_width=True)
+st.sidebar.image("./BARRA_2024.png", use_column_width=True)
 
 st.sidebar.markdown('''
 <h2 style="color: #1D70B7;">DEMONSTRADOR</h2>
