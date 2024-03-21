@@ -6,6 +6,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(layout='wide')
 
+
 #TODO change to relative path
 file_path = 'src/GIATEX_dataset_merged_demo.csv'
 
@@ -74,6 +75,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Display the images in the sidebar
+# st.sidebar.image("src/logo_oficial.png", use_column_width=True)
+# st.sidebar.image("src/BARRA_2024.png", use_column_width=True)
+
+# Display the images in the sidebar
 st.sidebar.image("src/logo_oficial.png", use_column_width=True)
 st.sidebar.image("src/BARRA_2024.png", use_column_width=True)
 
@@ -125,10 +130,14 @@ si_units = features_units[add_selectbox]
 average_parameter = df_giatex_copy_clean.groupby(['latitude', 'longitude', 'bacia_hidrografica',  'Banho simplif.'])[variable_name].mean().reset_index()
 
 # Round parameter values to zero decimal places. It will improve the visual in chart
-average_parameter[variable_name] = average_parameter[variable_name].round(0)
+# average_parameter[variable_name] = average_parameter[variable_name].round(0)
 
-#duplicate column and transform into string for text label in chart
-average_parameter['value_str'] = average_parameter[variable_name].astype(int).astype(str)
+# If value is 0, round to 3 decimal places; otherwise, round to integer
+average_parameter[variable_name] = average_parameter[variable_name].apply(lambda x: round(x, 3) if 0 < x < 1 else round(x))
+print(average_parameter[variable_name])
+
+# #duplicate column and transform into string for text label in chart
+average_parameter['value_str'] = average_parameter[variable_name].astype(str)
 
 #define the Banho - água de entrada, bruto, etar
 df_use_for_bubblemap = average_parameter[average_parameter['Banho simplif.'] == selected]
