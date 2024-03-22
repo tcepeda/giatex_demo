@@ -82,9 +82,9 @@ st.markdown("""
 st.sidebar.image("src/logo_oficial.png", use_column_width=True)
 st.sidebar.image("src/BARRA_2024.png", use_column_width=True)
 
-st.sidebar.markdown('''
-<h2 style="color: #1D70B7;">DEMONSTRADOR</h2>
-''', unsafe_allow_html=True)
+#st.sidebar.markdown('''
+#<h2 style="color: #1D70B7;">DEMONSTRADOR</h2>
+#''', unsafe_allow_html=True)
 
 #Retirado para efeitos de demonstração em ambiente android
 
