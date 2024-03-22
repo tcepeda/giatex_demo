@@ -86,9 +86,12 @@ st.sidebar.markdown('''
 <h2 style="color: #1D70B7;">DEMONSTRADOR</h2>
 ''', unsafe_allow_html=True)
 
+#Retirado para efeitos de demonstração em ambiente android
+'''
 st.sidebar.markdown('''
 <h3 style="color: #1D70B7; font-weight: normal;">Comportamento dos parâmetros físico-químicos das águas e efluentes dos processos de enobrecimento têxtil</h3>
 ''', unsafe_allow_html=True)
+'''
 
 # Define the line style (optional)
 line_style = "border-top: 1px solid #E0F4F3;"  # Adjust color and thickness as needed
