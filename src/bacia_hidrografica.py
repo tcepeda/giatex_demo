@@ -1,4 +1,4 @@
-import plotly.express as px
+eimport plotly.express as px
 import json
 import pandas as pd
 import streamlit as st
@@ -15,7 +15,7 @@ encodings_to_try = ['utf-8', 'latin-1', 'ISO-8859-1']
 for encoding in encodings_to_try:
     try:
         df_giatex_original = pd.read_csv(file_path, sep=';', encoding=encoding)
-        print(f"Successfully read the file with encoding: {encoding}")
+        print(f"Successfully read the file with encoding: e{encoding}")
         break  # Exit the loop if successful
     except UnicodeDecodeError:
         print(f"Failed to read with encoding: {encoding}")
@@ -167,7 +167,7 @@ px.set_mapbox_access_token(mapbox_access_token)
 # MAIN CONTAINER----------------------------------------------------------------
 formatted_text = f"""<h2 style="font-weight: bold;">
 <span style="font-size: 60px; color: #1D70B7;">Explora o Mapa</span> <br>
-<span style="color: #D8D9DA;">Parâmetro: <span style="color: #41C9E2;">{variable_name} {si_units}</span></span></h2>"""
+<span style="color: #DDDDDD;">Parâmetro: <span style="color: #41C9E2;">{variable_name} {si_units}</span></span></h2>"""
 
 st.markdown(formatted_text, unsafe_allow_html=True)
 
