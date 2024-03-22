@@ -162,7 +162,7 @@ px.set_mapbox_access_token(mapbox_access_token)
 
 
 # MAIN CONTAINER----------------------------------------------------------------
-formatted_text = f"""<h2 style="color: #1D70B7; font-weight: bold; font-size: 37px;">Explora o Mapa do Consórcio! <br>Parâmetro: {variable_name} {si_units}</h2>"""
+formatted_text = f"""<h2 style="color: #1D70B7; font-weight: bold; font-size: 50px;">Explora o Mapa do Consórcio! <br>Parâmetro: {variable_name} {si_units}</h2>"""
 
 st.markdown(formatted_text, unsafe_allow_html=True)
 
