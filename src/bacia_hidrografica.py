@@ -104,7 +104,7 @@ with st.sidebar.container():
 with st.sidebar:
     selected = option_menu("Amostras", ["Água entrada", 'Efluente bruto', 'Efluente ETAR'], 
         icons=['droplet', 'droplet-fill', 'droplet-half'],
-        menu_icon="water", default_index=1,
+        menu_icon="water", default_index=0,
     styles={
         "container": {"padding": "0!important", "background-color": "#fafafa"},
         "icon": {"color": "#35A8E0", "font-size": "20px"}, 
