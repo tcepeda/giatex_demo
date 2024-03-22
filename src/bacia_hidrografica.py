@@ -171,6 +171,12 @@ formatted_text = f"""<h2 style="font-weight: bold;">
 
 st.markdown(formatted_text, unsafe_allow_html=True)
 
+# Display the input parameter
+add_selectbox = st.markdown.selectbox(
+    "Selecione o **Parâmetro** que Quer Monitorizar",
+    (features)
+)
+
 # Create a scatter map with longitude and latitude
 fig = px.scatter_mapbox(df_use_for_bubblemap,
                         lat='latitude',
