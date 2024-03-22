@@ -164,18 +164,11 @@ px.set_mapbox_access_token(mapbox_access_token)
 # MAIN CONTAINER----------------------------------------------------------------
 #formatted_text = f"""<h2 style="color: #1D70B7; font-weight: bold; font-size: 50px;">Explora o Mapa do Consórcio! <br>Parâmetro: {variable_name} {si_units}</h2>"""
 
-# MAIN CONTAINER----------------------------------------------------------------
-#formatted_text = f"""<h2 style="font-weight: bold;">
-#<span style="font-size: 60px; color: #1D70B7;">Explora o Mapa</span> <br>
-#<span style="color: #35A8E0;">Parâmetro: <span style="color: #35A8E0;">{variable_name} {si_units}</span></span></h2>"""
-
-# MAIN CONTAINER----------------------------------------------------------------
 formatted_text = f"""<h2 style="font-weight: bold;">
 <span style="font-size: 60px; color: #1D70B7;">Explora o Mapa</span> <br>
-<span style="color: #35A8E0;">{si_units}</span></span></h2>"""
+<span style="color: #35A8E0;">Parâmetro: <span style="color: #35A8E0;">{variable_name} {si_units}</span></span></h2>"""
 
 st.markdown(formatted_text, unsafe_allow_html=True)
-st.selectbox("Selecione o Parâmetro que Quer Monitorizar", features)
 
 
 # Create a scatter map with longitude and latitude
