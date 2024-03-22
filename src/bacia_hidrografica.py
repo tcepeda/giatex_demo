@@ -22,21 +22,10 @@ for encoding in encodings_to_try:
 
 df_giatex_copy = df_giatex_original.copy()
 
-'''
-features = ['pH', 'Condutividade',
-            'Alcalinidade', 'Dureza', 'Cor_p',
-            'Turbidez', 'Sólidos suspensos totais',
-            'Carência química de oxigénio',
-            'Carência bioquímica de oxigénio',
-            'Carbono orgânico total', 'Azoto total',
-            'Nitratos', 'Nitritos',
-            'Alumínio', 'Chumbo',
-            'Cobre', 'Crómio total', 'Ferro',
-            'Manganês', 'Magnésio', 'Zinco',
-            'Cálcio', 'Cloretos', 'Sulfatos',
-            'Sulfitos', 'Sulfuretos',
-            'Detergentes aniónicos']
-'''
+
+#features = ['pH', 'Condutividade','Alcalinidade', 'Dureza', 'Cor_p', 'Turbidez', 'Sólidos suspensos totais', 'Carência química de oxigénio', 'Carência bioquímica de oxigénio', 'Carbono orgânico total', 'Azoto total', 'Nitratos', 'Nitritos', 'Alumínio', 'Chumbo', 'Cobre', 'Crómio total', 'Ferro',
+           # 'Manganês', 'Magnésio', 'Zinco', 'Cálcio', 'Cloretos', 'Sulfatos', 'Sulfitos', 'Sulfuretos', 'Detergentes aniónicos']
+
 
 features = ['pH', 'Condutividade',
             'Alcalinidade', 'Dureza',
