@@ -175,7 +175,7 @@ formatted_text = f"""<h2 style="font-weight: bold;">
 <span style="color: #35A8E0;">{st.selectbox("Selecione o Parâmetro que Quer Monitorizar", features)}  {si_units}</span></span></h2>"""
 
 st.markdown(formatted_text, unsafe_allow_html=True)
-
+st.selectbox("Selecione o Parâmetro que Quer Monitorizar", features)
 
 
 # Create a scatter map with longitude and latitude
