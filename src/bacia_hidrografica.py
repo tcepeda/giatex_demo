@@ -22,6 +22,7 @@ for encoding in encodings_to_try:
 
 df_giatex_copy = df_giatex_original.copy()
 
+'''
 features = ['pH', 'Condutividade',
             'Alcalinidade', 'Dureza', 'Cor_p',
             'Turbidez', 'Sólidos suspensos totais',
@@ -35,6 +36,14 @@ features = ['pH', 'Condutividade',
             'Cálcio', 'Cloretos', 'Sulfatos',
             'Sulfitos', 'Sulfuretos',
             'Detergentes aniónicos']
+'''
+
+features = ['pH', 'Condutividade',
+            'Alcalinidade', 'Dureza',
+            'Turbidez', 'Sólidos suspensos totais',
+            'Carência química de oxigénio',
+            'Carência bioquímica de oxigénio',
+            'Nitratos', 'Cálcio']
 
 features_units = {'pH':'un.', 'Condutividade':'mS/cm',
             'Alcalinidade': 'mg/L', 'Dureza': 'mg/L', 'Cor_p':'Pt-Co',
